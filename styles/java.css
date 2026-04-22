@@ -171,8 +171,8 @@ footer {
 	@supports (display: grid) {
 		header { grid-area: header; }
 		nav { grid-area: nav; }
+		main { grid-area: main; }
 		footer { grid-area: footer; }
-		footer {grid-area: footer; }
 		#wrapper { 
 			display: grid;
 			grid-template:
