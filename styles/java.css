@@ -172,14 +172,14 @@ footer {
 		header { grid-area: header; }
 		nav { grid-area: nav; }
 		main { grid-area: main; }
-		footer { grid-area: footer; }
+		footer { grid-area: footer;	}
 		#wrapper { 
 			display: grid;
 			grid-template:
 				"header header"
 				"nav main"
 				"footer footer"
-				/ 200px;
+				/ 200px 1fr;
 			}
 		nav ul { flex-direction: column; }
 		header { background-image: url(../images/coffeelogo.jpg); }
