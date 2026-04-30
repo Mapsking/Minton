@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	
+<head>
+	<meta charset="utf-8">
+	<title>JavaJam Coffee Bar | Jobs</title>
+	<link href="styles/java.css" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div id="wrapper">
+	<header>
+		<h1><a href="index.html">JavaJam Coffee Bar</a></h1>
+	</header>
+	<nav>
+		<!-- Navigation -->
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="menu.html">Menu</a></li>
+			<li><a href="music.html">Music</a></li>
+			<li><a href="jobs.html">Jobs</a></li>
+		</ul>
+	</nav>
+	
+	<main>
+		<div id="herojobs">
+		</div>
+		<h2>Jobs at JavaJam</h2>
+		<p>Want to work at JavaJam? Fill out the form below to start your application. All information is required.</p>
+		
+		<!-- Form for Job information -->
+		<form method="post" action="https://webdevbasics.net/scripts/javajam8.php">
+			<label for="fName">First Name: </label>
+			<input type="text" id="fName" name="fName" required>
+			
+			<label for="lName">First Name: </label>
+			<input type="text" id="lName" name="lName" required>
+			
+			<label for="myEmail">Email: </label>
+			<input type="email" id="myEmail" name="myEmail" required>
+			
+			<label for="myStart">Start Date: </label>
+			<input type="date" id="myStart" name="myStart" required>
+			
+			<label for="myExperience">Experience: </label>
+			<textarea name="myEmail" id="myExperience" rows = "2" cols = "20" required></textarea>
+			
+			<div class="form-buttons">
+				<input type="reset" value="Clear Fields">
+				<input type="submit" value="Apply Now">
+			</div>
+						
+		</form>
+	</main>
+
+	<footer>
+		Copyright &copy; 2026 JavaJam Coffee Bar | <a href="mailto:sminton21@amarillocollege.com">Webmaster</a>
+	</footer>	
+	</div>
+</body>
+</html>

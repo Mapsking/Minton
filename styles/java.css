@@ -118,6 +118,13 @@ img {
 	background-size: 100% 100%;
 }
 
+#herojobs {
+	height: 300px;
+	background-image: url(../images/coffeecup.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+
 #mobile { display: inline; }
 #desktop { display: none; }
 
@@ -130,6 +137,32 @@ footer {
 	padding-bottom: 1em;
 	border-top: 2px solid #8C3826;	
 }
+/* Styles for the table on the menu page */
+table {
+	margin: auto;
+	width: 90%;
+	border-spacing: 0;
+}
+
+th,td { padding: 10px; }
+tr:nth-of-type(odd) {background-color: #D2B48E; }
+
+/* Styles for the form */
+form {
+	display: flex;
+	flex-direction: column;
+	padding-left: 1em;
+	width: 80%;
+	gap: .5em;
+}
+
+.form-buttons {
+	display: flex;
+	flex-direction: column;
+	gap: 1em;
+}
+
+input, textarea { width: 100; }		
 
 /* Media query for medium screens */
 @media (min-width: 600px) { 
@@ -150,6 +183,7 @@ footer {
 	}
 	#heromugs {	background-image: url(../images/heromugs.jpg); }
 	#heroguitar { background-image: url(../images/heroguitar.jpg); }
+	#herojobs { background-image: url(../images/herojobs.jpg); }
 	#flow {
 		display: flex;
 		flex-direction: row;
@@ -164,6 +198,26 @@ footer {
 		margin-left: 10%;
 		margin-right: 10%;
 	}
+	
+	/* Styles for the form */
+	form {
+		width: 88%;
+		display: grid;
+		grid-template-columns:auto 1fr;
+		gap: 1em;
+		margin: 0 auto;
+	}
+	
+	.form-buttons {
+		flex-direction: row;
+		grid-column: 1 / -1;
+		display: flex;
+		gap: 1em;
+	}
+}
+
+.form-buttons input {
+    flex: 1;
 }
 
 /* Media query for large screens */
@@ -180,7 +234,7 @@ footer {
 				"nav main"
 				"footer footer"
 				/ 200px 1fr;
-			}
+		}
 		nav ul { flex-direction: column; }
 		header { background-image: url(../images/coffeelogo.jpg); }
 	}
