@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>The Lineup | Electric Pixel Inn</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Explore The Lineup at Electric Pixel Inn, featuring weekly gaming events, community gatherings, and a welcoming space for guests to connect and play.">
+	<link rel="stylesheet" href="styles/styles.css">
+	<link rel="stylesheet" href="styles/night-mode.css">
+</head>
+
+<body>
+	<!-- Page container -->
+	<div id="wrapper">
+  
+	<!-- Header -->
+	<header>
+		<h1><a href="index.html"> <img src="images/electric_pixel_inn_logo.png" alt="Electric Pixel Inn"></a></h1>
+		
+		<!-- Light switch button -->
+		<div class="theme-switch-wrap">
+			<button id="themeToggle" class="theme-switch" type="button" aria-label="Enable night mode">
+				<img id="switchImage" src="images/white_lightswitch_off.png" alt="Toggle night mode">
+			</button>
+		</div>
+	</header>
+		
+	<!-- Navigation -->
+	<nav>
+		<ul> 
+			<!-- Change to the home button/grid in the nav for mobile screens -->
+			<li><a href="index.html">Home</a></li>
+			<li><a href="the_check_point.html">The Check Point</a></li>
+			<li><a href="the_board_room.html">The Board Room</a></li>
+			<li><a href="the_lineup.html">The Lineup</a></li>
+			<li><a href="contact.html">Contact</a></li>
+		</ul>
+	</nav>
+	
+	<!-- Main content -->
+	<main>
+		<h2>The Lineup</h2>
+		
+		<p><strong><em>The Lineup</em></strong> is a rotating selection of featured events and weekly gatherings at <strong><em>Electric Pixel Inn</em></strong>. Each month brings a mix of scheduled activities and special events, with familiar favorites available throughout the week.</p>
+		
+		<!-- Audio file for events (2 versions) and download -->
+		<section class="media">
+
+			<h3 id="audio-title-events">
+				<strong><em>Electric Pixel Inn</em></strong> Events Ambience
+			</h3>
+
+			<audio controls loop aria-labelledby="audio-title-events">
+				<source src="media/events_ambience.ogg" type="audio/ogg">
+				<source src="media/events_ambience.mp3" type="audio/mpeg">
+				Your browser does not support the audio element.
+			</audio>
+
+		</section>
+
+		<p>
+			<a href="media/events_ambience.mp3" download>Download Audio File</a>
+		</p>
+		
+	<!-- Event cards -->
+	<h3>Featured Events</h3>
+
+	<div class="event_cards">
+
+		<div class="flip-card">
+			<div class="flip-inner">
+
+				<div class="flip-front">
+					<h4>Friday Game Night</h4>
+					<span class="flip-hint">Click to flip</span>
+				</div>
+
+				<div class="flip-back">
+					<div class="flip-spacer"></div>
+					<p>A relaxed evening of familiar board games and casual group play. Join an open table or start something new with friends, family, or other guests.</p>
+				</div>
+
+			</div>
+		</div>
+
+		<div class="flip-card">
+			<div class="flip-inner">
+
+				<div class="flip-front">
+					<h4>Trivia Night</h4>
+					<span class="flip-hint">Click to flip</span>
+				</div>
+
+				<div class="flip-back">
+					<div class="flip-spacer"></div>
+					<p>A light team trivia night with rounds covering games, pop culture, and general knowledge. Friendly competition, open to all skill levels.</p>
+				</div>
+
+			</div>
+		</div>
+
+		<div class="flip-card">
+			<div class="flip-inner">
+
+				<div class="flip-front">
+					<h4>Strategy Night</h4>
+					<span class="flip-hint">Click to flip</span>
+				</div>
+
+				<div class="flip-back">
+					<div class="flip-spacer"></div>
+					<p>A slower-paced night focused on classic strategy games like chess and checkers. Ideal for focused play and quiet conversation.</p>
+				</div>
+
+			</div>
+		</div>
+
+		<div class="flip-card">
+			<div class="flip-inner">
+
+				<div class="flip-front">
+					<h4>Community Mix Night</h4>
+					<span class="flip-hint">Click to flip</span>
+				</div>
+
+				<div class="flip-back">
+					<div class="flip-spacer"></div>
+					<p>A casual drop-in night with a rotating selection of board and card games. Guests can join different tables and play at their own pace.</p>
+				</div>
+
+			</div>
+		</div>
+
+	</div>
+	
+	<!-- Weekly lineup descriptions -->
+	<h3>Weekly Lineup</h3>
+		<ul>
+			<li>Retro Replay &ndash; classic gaming throwback night</li>
+			<li>Chess &amp; Strategy &ndash; focused board game evening</li>
+			<li>Card Circle &ndash; casual card game meetup</li>
+			<li>Open Table &ndash; open play social night</li>
+			<li>Family Play &ndash; all-ages daytime play session</li>
+			<li>Community Mix &ndash; rotating games and social tables</li>
+		</ul>
+	
+		<select id="eventFilter">
+			<option value="all" selected>All Categories</option>
+			<option value="casual">Casual</option>
+			<option value="strategy">Strategy</option>
+			<option value="social">Social</option>
+		</select>
+		
+		<!-- Table of specific weekly times and events -->
+		<table>
+			<tr>
+				<th>Event</th>
+				<th>Day</th>
+				<th>Time</th>
+				<th>Type</th>
+			</tr>
+			<tr data-type="casual">
+				<td>Retro Replay</td>
+				<td>Tue</td>
+				<td>6:30 pm &ndash; 9:30 pm</td>
+				<td>Casual / Retro</td>
+			</tr>
+			<tr data-type="strategy">
+				<td>Chess &amp; Strategy</td>
+				<td>Wed</td>
+				<td>6:00 pm &ndash; 9:00 pm</td>
+				<td>Strategy</td>
+			</tr>
+			<tr data-type="casual">
+				<td>Card Circle</td>
+				<td>Thu</td>
+				<td>7:00 pm &ndash; 10:00 pm</td>
+				<td>Casual / Cards</td>
+			</tr>
+			<tr data-type="social">
+				<td>Open Table</td>
+				<td>Fri</td>
+				<td>7:00 pm &ndash; 10:00 pm</td>
+				<td>Social Play</td>
+			</tr>
+			<tr data-type="casual">
+				<td>Family Play</td>
+				<td>Sat</td>
+				<td>1:00 pm &ndash; 6:00 pm</td>
+				<td>Family / All Ages</td>
+			</tr>
+			<tr data-type="social">
+				<td>Community Mix</td>
+				<td>Sun</td>
+				<td>5:00 pm &ndash; 8:00 pm</td>
+				<td>Mixed / Community</td>
+			</tr>
+		</table>
+	
+	<!-- Flexbox for images -->
+	<div class="lineup_gallery">
+		<img src="images/trivia_night.png" alt="Trivia night at Electric Pixel Inn with guests seated at tables playing in groups">
+		<img src="images/community_mix_night.png" alt="Community Mix night at Electric Pixel Inn with guests and families playing board and card games together">
+	</div>
+	</main>
+		
+	<!-- Footer -->
+	<footer>
+		Copyright &copy; 2026 Electric Pixel Inn | <a href="mailto:sminton21@amarillocollege.com">Steve Minton</a>
+	</footer>
+	</div>
+
+<script src="js/main.js"></script>
+
+</body>
+
+</html>
